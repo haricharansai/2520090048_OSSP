@@ -1,0 +1,139 @@
+hari@LAPTOP-C6JDNLO2:~/OS/2520090048_Practical/Practical_1$ cd "/home/hari/OS/2520090048_Practical/Practical_1/" && gcc sourcecode.c -o sourcecode && "/home/hari/OS/2520090048_Practical/Practical_1/"sourcecode
+Enter a Linux command: uname -a
+
+Parent Process
+Parent PID : 2756
+Child PID  : 2810
+
+Child Process
+Child PID  : 2810
+Parent PID : 2756
+
+Executing command...
+Command execution failed: No such file or directory
+
+Child process finished.
+hari@LAPTOP-C6JDNLO2:~/OS/2520090048_Practical/Practical_1$ cd "/home/hari/OS/2520090048_Practical/Practical_1/" && gcc sourcecode.c -o sourcecode && "/home/hari/OS/2520090048_Practical/Practical_1/"sourcecode
+Enter a Linux command: lscpu 
+
+Parent Process
+Parent PID : 2842
+Child PID  : 2895
+
+Child Process
+Child PID  : 2895
+Parent PID : 2842
+
+Executing command...
+Architecture:                x86_64
+  CPU op-mode(s):            32-bit, 64-bit
+  Address sizes:             39 bits physical, 48 bits virtual
+  Byte Order:                Little Endian
+CPU(s):                      20
+  On-line CPU(s) list:       0-19
+Vendor ID:                   GenuineIntel
+  Model name:                13th Gen Intel(R) Core(TM) i7-13650HX
+    CPU family:              6
+    Model:                   183
+    Thread(s) per core:      2
+    Core(s) per socket:      10
+    Socket(s):               1
+    Stepping:                1
+    BogoMIPS:                5606.40
+    Flags:                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clfl
+                             ush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_go
+                             od nopl xtopology tsc_reliable nonstop_tsc cpuid tsc_known_freq pni pclmulqd
+                             q vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_tim
+                             er aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs 
+                             ibpb stibp ibrs_enhanced tpr_shadow ept vpid ept_ad fsgsbase tsc_adjust bmi1
+                              avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt
+                              xsavec xgetbv1 xsaves avx_vnni vnmi umip waitpkg gfni vaes vpclmulqdq rdpid
+                              movdiri movdir64b fsrm md_clear serialize flush_l1d arch_capabilities
+Virtualization features:     
+  Virtualization:            VT-x
+  Hypervisor vendor:         Microsoft
+  Virtualization type:       full
+Caches (sum of all):         
+  L1d:                       480 KiB (10 instances)
+  L1i:                       320 KiB (10 instances)
+  L2:                        12.5 MiB (10 instances)
+  L3:                        24 MiB (1 instance)
+NUMA:                        
+  NUMA node(s):              1
+  NUMA node0 CPU(s):         0-19
+Vulnerabilities:             
+  Gather data sampling:      Not affected
+  Indirect target selection: Not affected
+  Itlb multihit:             Not affected
+  L1tf:                      Not affected
+  Mds:                       Not affected
+  Meltdown:                  Not affected
+  Mmio stale data:           Not affected
+  Reg file data sampling:    Mitigation; Clear Register File
+  Retbleed:                  Mitigation; Enhanced IBRS
+  Spec rstack overflow:      Not affected
+  Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+  Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+  Spectre v2:                Mitigation; Enhanced / Automatic IBRS; IBPB conditional; PBRSB-eIBRS SW sequ
+                             ence; BHI BHI_DIS_S
+  Srbds:                     Not affected
+  Tsa:                       Not affected
+  Tsx async abort:           Not affected
+  Vmscape:                   Not affected
+
+Child process finished.
+hari@LAPTOP-C6JDNLO2:~/OS/2520090048_Practical/Practical_1$ lsblk
+NAME
+    MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+sda   8:0    0 364.8M  1 disk 
+sdb   8:16   0 144.5M  1 disk 
+sdc   8:32   0     2G  0 disk [SWAP]
+sdd   8:48   0     1T  0 disk /snap
+top - 05:02:45 up 27 min,  1 user,  load average: 0.00, 0.00, 0.04
+Tasks:  46 total,   1 running,  45 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.1 sy,  0.0 ni, 99.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7749.1 total,   6033.7 free,   1517.4 used,    354.3 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6231.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                   
+   1815 hari      20   0 1471464  75248  49020 S   0.7   0.9   0:04.29 MainThread                                                                
+   1867 hari      20   0   19.8g 813228 101304 S   0.7  10.2   0:39.74 MainThread                                                                
+   1794 hari      20   0 1790088 151204  54456 S   0.3   1.9   0:11.32 MainThread                                                                
+   2262 root      20   0    3196   1200   1044 S   0.3   0.0   0:00.35 Relay(2263)                                                               
+   3118 hari      20   0    9372   5624   3400 R   0.3   0.1   0:00.11 top                                                                       
+      1 root      20   0   21716  12784   9404 S   0.0   0.2   0:00.62 systemd                                                                   
+      2 root      20   0    3172   2204   2072 S   0.0   0.0   0:00.02 init-systemd(Ub                                                           
+      6 root      20   0    3188   2124   2008 S   0.0   0.0   0:00.00 init                                                                      
+     52 root      19  -1   50360  16068  14984 S   0.0   0.2   0:00.28 systemd-journal                                                           
+    101 root      20   0   25136   6448   4996 S   0.0   0.1   0:00.91 systemd-udevd                                                             
+    114 root      20   0  152936   1764   1508 S   0.0   0.0   0:00.00 snapfuse                                                                  
+    116 root      20   0  153068   1828   1508 S   0.0   0.0   0:00.00 snapfuse                                                                  
+    120 root      20   0  227832   1996   1540 S   0.0   0.0   0:00.00 snapfuse                                                                  
+    127 root      20   0  153068   1636   1384 S   0.0   0.0   0:00.00 snapfuse                                                                  
+    132 root      20   0  153068   1688   1428 S   0.0   0.0   0:00.00 snapfuse                                                                  
+    136 root      20   0  153068   1644   1400 S   0.0   0.0   0:00.00 snapfuse                                                                  
+    142 root      20   0  526756  12696   1544 S   0.0   0.2   0:02.26 snapfuse                                                                  
+    215 systemd+  20   0   21336  12860  10740 S   0.0   0.2   0:00.12 systemd-resolve                                                           
+    219 systemd+  20   0   91028   7832   6864 S   0.0   0.1   0:00.17 systemd-timesyn                                                           
+    225 root      20   0    4236   2624   2368 S   0.0   0.0   0:00.00 cron                                                                      
+    226 message+  20   0    9640   5264   4560 S   0.0   0.1   0:00.10 dbus-daemon                                                               
+    232 root      20   0 2515924  38820  25240 S   0.0   0.5   0:01.38 snapd                                                                     
+    233 root      20   0   17968   8680   7636 S   0.0   0.1   0:00.09 systemd-logind                                                            
+    244 syslog    20   0  222508   5884   4476 S   0.0   0.1   0:00.06 rsyslogd                                                                  
+    247 root      20   0    3116   1924   1788 S   0.0   0.0   0:00.00 agetty                                                                    
+    265 root      20   0  107028  22816  13360 S   0.0   0.3   0:00.08 unattended-upgr                                                           
+    408 root      20   0    6696   4568   3784 S   0.0   0.1   0:00.01 login                                                                     
+    453 hari      20   0   20384  11436   9272 S   0.0   0.1   0:00.16 systemd                                                                   
+    454 hari      20   0   21156   3564   1840 S   0.0   0.0   0:00.00 (sd-pam)                                                                  
+    478 hari      20   0    6072   5280   3620 S   0.0   0.1   0:00.02 bash                                                                      
+   1781 root      20   0    3188   1120    980 S   0.0   0.0   0:00.00 SessionLeader                                                             
+   1782 root      20   0    3188   1192   1044 S   0.0   0.0   0:00.00 Relay(1783)                                                               
+   1783 hari      20   0    2800   1808   1700 S   0.0   0.0   0:00.00 sh                                                                        
+   1784 hari      20   0    2800   1884   1764 S   0.0   0.0   0:00.00 sh                                                                        
+   1790 hari      20   0    2800   1872   1764 S   0.0   0.0   0:00.00 sh                                                                        
+   1835 hari      20   0 1660900  58404  42748 S   0.0   0.7   0:01.03 MainThread                                                                
+   1944 hari      20   0    6208   5380   3592 S   0.0   0.1   0:00.00 bash                                                                      
+   2223 root      20   0    3180   1120    980 S   0.0   0.0   0:00.00 SessionLeader                                                             
+
+Child process finished.
+hari@LAPTOP-C6JDNLO2:~/OS/2520090048_Practical/Practical_1$ 
