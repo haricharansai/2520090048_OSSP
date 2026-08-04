@@ -1,0 +1,22 @@
+hari@LAPTOP-C6JDNLO2:~/OS/2520090048_Practical$ cd "/home/hari/OS/2520090048_Practical/Practical_3/" && gcc sourcecode.c -o sourcecode && "/home/hari/OS/2520090048_Practical/Practical_3/"sourcecode
+
+===== PARENT PROCESS =====
+Parent PID : 1163
+Child PID  : 1164
+Parent waiting for child...
+
+===== CHILD PROCESS =====
+Child PID  : 1164
+Parent PID : 1163
+Child is sleeping for 10 seconds...
+Child process terminating.
+Child has terminated.
+Parent process terminating.
+hari@LAPTOP-C6JDNLO2:~/OS/2520090048_Practical/Practical_3$ ps -o pid,ppid,state,cmd
+    PID    PPID S CMD
+   1136     771 S /bin/bash --init-file /home/hari/.vscode-server/bin/e4c7e7b1d6d060162f4aa7f8225271b67ce1df75/out/vs/workbench/contrib/terminal/
+   1396    1136 R ps -o pid,ppid,state,cmd
+hari@LAPTOP-C6JDNLO2:~/OS/2520090048_Practical/Practical_3$ ps
+    PID TTY          TIME CMD
+   1136 pts/5    00:00:00 bash
+   1522 pts/5    00:00:00 ps
