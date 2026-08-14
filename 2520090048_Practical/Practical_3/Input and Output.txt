@@ -20,3 +20,74 @@ hari@LAPTOP-C6JDNLO2:~/OS/2520090048_Practical/Practical_3$ ps
     PID TTY          TIME CMD
    1136 pts/5    00:00:00 bash
    1522 pts/5    00:00:00 ps
+
+
+
+
+   -----------------new-----------------------
+   hari@LAPTOP-C6JDNLO2:~/OS/2520090048_Practical$ cd "/home/hari/OS/2520090048_Practical/Practical_3/" && gcc sourcecode.c -o sourcecode && "/home/hari/OS/2520090048_Practical/Practical_3/"sourcecode
+
+===== PARENT PROCESS =====
+Parent PID : 2235
+Child PID  : 2236
+Parent waiting for child...
+
+===== CHILD PROCESS =====
+Child PID  : 2236
+Parent PID : 2235
+Child is sleeping for 10 seconds...
+Child process terminating.
+Child has terminated.
+Parent process terminating.
+hari@LAPTOP-C6JDNLO2:~/OS/2520090048_Practical/Practical_3$ ps
+    PID TTY          TIME CMD
+   2214 pts/5    00:00:00 bash
+   2369 pts/5    00:00:00 ps
+hari@LAPTOP-C6JDNLO2:~/OS/2520090048_Practical/Practical_3$ cd "/home/hari/OS/2520090048_Practical/Practical_3/" && gcc sourcecode.c -o sourcecode && "/home/hari/OS/2520090048_Practical/Practical_3/"sourcecode
+
+===== PARENT PROCESS =====
+Parent PID : 3834
+Child PID  : 3835
+Parent waiting for child...
+
+===== CHILD PROCESS =====
+Child PID  : 3835
+Parent PID : 3834
+Child is sleeping for 10 seconds...
+Child process terminating.
+Child has terminated.
+Parent process terminating.
+hari@LAPTOP-C6JDNLO2:~/OS/2520090048_Practical/Practical_3$ ./proc
+bash: ./proc: No such file or directory
+hari@LAPTOP-C6JDNLO2:~/OS/2520090048_Practical/Practical_3$ /proc
+bash: /proc: Is a directory
+hari@LAPTOP-C6JDNLO2:~/OS/2520090048_Practical/Practical_3$ /proc.
+bash: /proc.: No such file or directory
+hari@LAPTOP-C6JDNLO2:~/OS/2520090048_Practical/Practical_3$ top
+top - 09:06:32 up 17 min,  1 user,  load average: 0.06, 0.10, 0.07
+Tasks:  45 total,   1 running,  44 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.1 us,  0.2 sy,  0.0 ni, 99.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7749.1 total,   6229.5 free,   1264.6 used,    411.2 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6484.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                    
+    591 hari      20   0   19.6g 564940  99972 S   1.3   7.1   0:28.58 MainThread                                                                 
+    611 hari      20   0 1475056  75540  48664 S   0.7   1.0   0:02.10 MainThread                                                                 
+    543 hari      20   0 1415308  58936  38960 S   0.3   0.7   0:00.53 MainThread                                                                 
+    783 hari      20   0 4244612  23324  16172 S   0.3   0.3   0:00.45 cpptools-srv                                                               
+      1 root      20   0   21744  12864   9492 S   0.0   0.2   0:00.68 systemd                                                                    
+      2 root      20   0    3172   2208   2072 S   0.0   0.0   0:00.01 init-systemd(Ub                                                            
+      6 root      20   0    3188   2128   2008 S   0.0   0.0   0:00.00 init                                                                       
+     52 root      19  -1   66820  15752  14572 S   0.0   0.2   0:00.23 systemd-journal                                                            
+    100 root      20   0   25532   6940   5004 S   0.0   0.1   0:00.29 systemd-udevd                                                              
+    115 root      20   0  153068   1876   1476 S   0.0   0.0   0:00.00 snapfuse                                                                   
+hari@LAPTOP-C6JDNLO2:~/OS/2520090048_Practical/Practical_3$ ls /proc
+1    141   257  4934  514  558  acpi       crypto         filesystems  key-users      locks    pagetypeinfo  stat           uptime
+100  2     275  4935  518  577  buddyinfo  devices        fs           keys           meminfo  partitions    swaps          version
+115  218   281  4938  52   591  bus        diskstats      interrupts   kmsg           misc     pressure      sys            vmallocinfo
+116  2214  287  4940  541  6    cgroups    dma            iomem        kpagecgroup    modules  schedstat     sysrq-trigger  vmstat
+118  226   416  505   542  611  cmdline    driver         ioports      kpagecount     mounts   scsi          sysvipc        zoneinfo
+125  246   461  506   543  647  config.gz  dynamic_debug  irq          kpageflags     mpt      self          thread-self
+132  247   462  507   554  650  consoles   execdomains    kallsyms     latency_stats  mtrr     slabinfo      timer_list
+137  253   478  508   555  783  cpuinfo    fb             kcore        loadavg        net      softirqs      tty
+hari@LAPTOP-C6JDNLO2:~/OS/2520090048_Practical/Practical_3$ 
