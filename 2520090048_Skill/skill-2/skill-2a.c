@@ -16,7 +16,7 @@ int main() {
         if (strcmp(input, "exit") == 0) {
             printf("Exiting shell...\n");
             break;
-        }
+            }
 
         if (strlen(input) == 0) {
             continue;
