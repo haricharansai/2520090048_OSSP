@@ -73,7 +73,7 @@ int main() {
     close(fd[0]);
     close(fd[1]);
 
-    cd
+    
     waitpid(pid1, NULL, 0);
     waitpid(pid2, NULL, 0);
 
