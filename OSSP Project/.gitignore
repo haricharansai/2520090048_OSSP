@@ -1,0 +1,14 @@
+# Compiled Object Files and Executables
+*.o
+scheduler
+test_runner
+*_asan
+scheduler_asan
+
+# Build Logs
+logs/
+*.log
+
+# Editor / OS artifacts
+.vscode/
+.DS_Store
